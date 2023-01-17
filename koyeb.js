@@ -5,11 +5,11 @@ RUN sudo dnf -y update &&\
     sudo dnf install -y git ffmpeg ImageMagick nodejs yarnpkg libwebp &&\
     sudo dnf clean all -y
 
-RUN git clone https://github.com/BrunoSobrino/TheMystic-Bot-MD
+RUN git clone https://github.com/mrjuice01/Queen-Enza-MD
 
-WORKDIR /root/TheMystic-Bot-MD
+WORKDIR /root/Queen-Enza-MD
 
-COPY ./root/TheMystic-Bot-MD
+COPY ./root/Queen-Enza-MD
 
 RUN yarn install
 
