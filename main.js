@@ -66,14 +66,14 @@ global.db.chain = chain(global.db.data)
 }
 loadDatabase()
 
-global.authFile = `EnzaAsif`
+global.authFile = `Enza-Session`
 const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 
 const connectionOptions = {
 printQRInTerminal: true,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['Queen-Enza','Safari','9.7.0']
+browser: ['Qᴜᴇᴇɴ ᴇɴᴢᴀ ᴍᴅ','Safari','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -118,8 +118,8 @@ readdirSync("./jadibts/" + file).forEach(file2 => {
 if (file2 !== "creds.json") { unlinkSync("./jadibts/" + file + "/" + file2) }})
 } catch {}}})*/
        
-readdirSync("./EnzaAsif").forEach(file => {
-if (file !== 'creds.json') {
+readdirSync("./Enza-Session").forEach(file => {
+if (file !== 'session.json') {
 unlinkSync("./EnzaAsif/" + file, { recursive: true, force: true })}})    
 return filename.map(file => {
 const stats = statSync(file)
